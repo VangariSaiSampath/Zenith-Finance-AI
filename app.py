@@ -12,7 +12,7 @@ import requests
 st.set_page_config(page_title="Zenith Finance AI", layout="wide", page_icon="💎")
 
 # Replace with your working Gemini API Key
-GEMINI_API_KEY = "AIzaSyAsSNbzBgxukqtyPrFblrtiV7ES1GqU800"
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 def local_css():
     st.markdown("""
