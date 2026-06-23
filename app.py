@@ -9,7 +9,7 @@ from google import genai
 import requests
 
 # --- CONFIGURATION & STYLING ---
-st.set_page_config(page_title="Zenith Finance AI", layout="wide", page_icon="💎")
+st.set_page_config(page_title="Sampath's AI Stock Predictor", layout="wide", page_icon="💎")
 
 # Replace with your working Gemini API Key
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
@@ -200,7 +200,7 @@ if ticker_data:
 
 # 2. Sidebar (Now Fully Clickable & Customizable)
 with st.sidebar:
-    st.title("💎 Zenith Data")
+    st.title("💎 Stock Data")
     st.markdown("---")
     
     # Wishlist Module
@@ -256,7 +256,7 @@ with st.sidebar:
         conn.close()
 
 # 3. Main Search Engine
-st.markdown("<h1 style='text-align: center;'>Zenith Finance AI</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Sampath's AI Stock Predictor</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; color: #888; margin-bottom: 30px;'>Global stock research, powered by real-time AI consensus.</p>", unsafe_allow_html=True)
 
 col_spacer1, col_search, col_spacer2 = st.columns([1, 2, 1])
@@ -348,7 +348,7 @@ if st.session_state['active_stock']:
                     st.download_button(
                         label="📥 Download AI Report (.txt)",
                         data=rec,
-                        file_name=f"{active_sym}_Zenith_AI_Research.txt",
+                        file_name=f"{active_sym}_Sampath_AI_Research.txt",
                         mime="text/plain"
                     )
                 except Exception as e:
